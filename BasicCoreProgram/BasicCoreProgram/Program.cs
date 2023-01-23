@@ -7,7 +7,7 @@ namespace BasicCoreProgram
         {
             Console.WriteLine("Welcome to Basic Core Program");
             Console.WriteLine("Choose Any Options to Perform");
-            Console.WriteLine("1:Flipcoin\n2:LeapYear\n11:Exit");
+            Console.WriteLine("1:Flipcoin\n2:LeapYear\n3:PowerOf2\n11:Exit");
             int Option = Convert.ToInt32(Console.ReadLine());
             switch(Option)
             {
@@ -18,6 +18,9 @@ namespace BasicCoreProgram
                 case 2:
                     LeapYear leapYear = new LeapYear();
                     leapYear.LeapYearCheck();
+                    break;
+                case 3:
+                    PowerOfTwo.PowerCheck();
                     break;
                 case 11:
                     Console.WriteLine("Press 11 For exit: ");
