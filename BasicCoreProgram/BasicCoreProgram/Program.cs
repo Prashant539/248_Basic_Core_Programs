@@ -7,7 +7,7 @@ namespace BasicCoreProgram
         {
             Console.WriteLine("Welcome to Basic Core Program");
             Console.WriteLine("Choose Any Options to Perform");
-            Console.WriteLine("1:Flipcoin\n2:LeapYear\n3:PowerOf2\n4:HarmonicNumber\n5:PrimeFactor\n11:Exit");
+            Console.WriteLine("1:Flipcoin\n2:LeapYear\n3:PowerOf2\n4:HarmonicNumber\n5:PrimeFactor\n6:QuotientReminder\n11:Exit");
             int Option = Convert.ToInt32(Console.ReadLine());
             switch(Option)
             {
@@ -30,6 +30,11 @@ namespace BasicCoreProgram
                     PrimeFactor primeFactor = new PrimeFactor();
                     primeFactor.Factor();
                     break;
+                case 6:
+                    QuotientAndReminder quotientAndReminder = new QuotientAndReminder();
+                    quotientAndReminder.QuotientReminderPrint();
+                    break;
+
                 case 11:
                     Console.WriteLine("Press 11 For exit: ");
                     break;
