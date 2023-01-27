@@ -7,7 +7,7 @@ namespace BasicCoreProgram
         {
             Console.WriteLine("Welcome to Basic Core Program");
             Console.WriteLine("Choose Any Options to Perform");
-            Console.WriteLine("1:Flipcoin\n2:LeapYear\n3:PowerOf2\n4:HarmonicNumber\n5:PrimeFactor\n6:QuotientReminder\n7:SwapNumber\n8:EvenOdd\n9:VowelConsonant\n11:Exit");
+            Console.WriteLine("1:Flipcoin\n2:LeapYear\n3:PowerOf2\n4:HarmonicNumber\n5:PrimeFactor\n6:QuotientReminder\n7:SwapNumber\n8:EvenOdd\n9:VowelConsonant\n10:LargestNumber\n11:Exit");
             int Option = Convert.ToInt32(Console.ReadLine());
             switch(Option)
             {
@@ -44,6 +44,9 @@ namespace BasicCoreProgram
                     break;
                 case 9:
                     VowelOrConsonant.VowelConsonant();
+                    break;
+                case 10:
+                    LargestNumber.LargestNumberPrint();
                     break;
 
                 case 11:
